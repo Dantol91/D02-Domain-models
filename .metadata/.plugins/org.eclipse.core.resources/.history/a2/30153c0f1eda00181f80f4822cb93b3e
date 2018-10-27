@@ -1,0 +1,19 @@
+
+package domain;
+
+public class HandyWorker extends Actor {
+
+
+	// Constructor
+
+	private HandyWorker() {
+		super();
+	}
+
+
+	// Atributes
+	
+	private String	make;
+	private Double	score;
+
+}

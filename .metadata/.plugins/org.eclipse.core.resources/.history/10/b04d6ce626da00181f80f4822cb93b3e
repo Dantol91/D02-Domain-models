@@ -1,0 +1,14 @@
+
+package domain;
+
+public class Phase extends DomainEntity {
+
+	// Constructor
+
+	public Phase() {
+		super();
+	}
+
+	// Attributes
+
+}

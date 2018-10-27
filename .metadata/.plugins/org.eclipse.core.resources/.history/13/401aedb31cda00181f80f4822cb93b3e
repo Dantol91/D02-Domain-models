@@ -1,0 +1,24 @@
+
+package domain;
+
+import java.util.Date;
+
+public class Message {
+
+	// Constructors
+
+	public Message() {
+		super();
+	}
+
+
+	// Atributes
+
+	private Date	moment;
+	private String	subject;
+	private String	body;
+	private String	priority;
+	private String	tags;
+	private Boolean	spam;
+
+}

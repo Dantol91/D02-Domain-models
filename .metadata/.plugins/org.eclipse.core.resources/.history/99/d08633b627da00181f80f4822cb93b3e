@@ -1,0 +1,15 @@
+
+package domain;
+
+public class Category extends DomainEntity {
+
+	// Constructor
+
+	public Category() {
+		super();
+	}
+
+	// Attributes
+
+	private String name;
+}

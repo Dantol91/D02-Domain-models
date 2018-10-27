@@ -1,0 +1,21 @@
+
+package domain;
+
+public class Warranty extends DomainEntity {
+
+	
+	// Constructor
+
+	public Warranty() {
+		super();
+	}
+
+
+	// Attributes
+	
+	private string title;
+	private String terms;
+	private Boolean finalMode;
+	private String laws;
+	
+}

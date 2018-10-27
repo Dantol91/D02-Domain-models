@@ -1,0 +1,99 @@
+
+package domain;
+
+import org.hibernate.validator.constraints.CreditCardNumber;
+import org.hibernate.validator.constraints.NotBlank;
+
+public class CreditCard {
+
+	// Attributes ----------------------------------------------------------------------
+
+	private String	holderName;
+	private String	brandName;
+	private String	number;
+	private String	expirationMonth;
+	private String	expirationYear;
+	private Integer	CVV;
+
+
+	// Constructors -----------------------------------------------------------
+
+	public CreditCard() {
+		super();
+	}
+
+
+	@NotBlank
+	public String getHolderName() {
+		return holderName;
+	}
+
+
+	
+	public void setHolderName(String holderName) {
+		this.holderName = holderName;
+	}
+
+
+	@NotBlank
+	public String getBrandName() {
+		return brandName;
+	}
+
+	@CreditCardNumber
+	@NotBlank
+	public void setBrandName(String brandName) {
+		this.brandName = brandName;
+	}
+
+
+	
+	public String getNumber() {
+		return number;
+	}
+
+
+	
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+
+	
+	public String getExpirationMonth() {
+		return expirationMonth;
+	}
+
+
+	
+	public void setExpirationMonth(String expirationMonth) {
+		this.expirationMonth = expirationMonth;
+	}
+
+
+	
+	public String getExpirationYear() {
+		return expirationYear;
+	}
+
+
+	
+	public void setExpirationYear(String expirationYear) {
+		this.expirationYear = expirationYear;
+	}
+
+
+	
+	public Integer getCVV() {
+		return CVV;
+	}
+
+
+	
+	public void setCVV(Integer cVV) {
+		CVV = cVV;
+	}
+
+	
+	
+}

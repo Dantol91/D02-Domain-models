@@ -1,0 +1,30 @@
+
+package domain;
+
+public class Category extends DomainEntity {
+
+	// Constructor
+
+	public Category() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	name;
+
+
+	@NotBlank
+	public String getName() {
+		return name;
+	}
+
+
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.persistence.Query"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.sql.Statement"/>
-<fullyQualifiedTypeName name="org.hibernate.jdbc.Work"/>
-<fullyQualifiedTypeName name="java.util.UUID"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="org.hibernate.tool.hbm2ddl.Target"/>
 <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 <fullyQualifiedTypeName name="utilities.internal.AbstractDatabasePopulator"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.CreditCardNumber"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.URL"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotBlank"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.Range"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Digits"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

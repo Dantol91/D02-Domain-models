@@ -1,0 +1,24 @@
+
+package domain;
+
+import java.util.Date;
+
+public class FixUpTask extends DomainEntity {
+
+	// Constructors
+
+	private FixUpTask() {
+		super();
+	}
+
+	// Atributes
+	
+	private String ticker;
+	private Date moment;
+	private String description;
+	private String address;
+	private Double maxPrice;
+	private Date startDate;
+	private Date endDate;
+
+}

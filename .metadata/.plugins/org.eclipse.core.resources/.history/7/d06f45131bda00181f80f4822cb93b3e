@@ -1,0 +1,14 @@
+
+package domain;
+
+public class Actor extends DomainEntity {
+
+	// Attributes ----------------------------------------------------------------------
+
+	// Constructors -----------------------------------------------------------
+
+	public Actor() {
+		super();
+	}
+
+}

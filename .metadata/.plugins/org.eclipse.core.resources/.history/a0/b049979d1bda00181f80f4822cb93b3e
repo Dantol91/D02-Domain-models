@@ -1,0 +1,24 @@
+
+package domain;
+
+public class Actor extends DomainEntity {
+
+	// Attributes ----------------------------------------------------------------------
+
+	private String	name;
+	private String	middleName;
+	private String	surname;
+	private String	email;
+	private String	phone;
+	private String	address;
+	private String	Photo;
+	private boolean	suspicious;
+
+
+	// Constructors -----------------------------------------------------------
+
+	public Actor() {
+		super();
+	}
+
+}

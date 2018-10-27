@@ -1,0 +1,37 @@
+
+package domain;
+
+public class Box {
+
+	// Constructors
+
+	public Box() {
+		super();
+	}
+
+
+	// Attributes 
+
+	private String	name;
+	private Boolean	systemBox;
+	
+	@NotBlank
+	public String getName() {
+		return name;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public Boolean getSystemBox() {
+		return systemBox;
+	}
+	
+	public void setSystemBox(Boolean systemBox) {
+		this.systemBox = systemBox;
+	}
+	
+	
+
+}

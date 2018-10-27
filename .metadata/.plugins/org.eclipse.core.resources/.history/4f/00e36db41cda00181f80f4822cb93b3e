@@ -1,0 +1,75 @@
+
+package domain;
+
+import java.util.Date;
+
+public class Message {
+
+	// Constructors
+
+	public Message() {
+		super();
+	}
+
+
+	// Atributes
+
+	private Date	moment;
+	private String	subject;
+	private String	body;
+	private String	priority;
+	private String	tags;
+	private Boolean	spam;
+	
+	@Past
+	public Date getMoment() {
+		return moment;
+	}
+	
+	public void setMoment(Date moment) {
+		this.moment = moment;
+	}
+	
+	public String getSubject() {
+		return subject;
+	}
+	
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+	
+	public String getBody() {
+		return body;
+	}
+	
+	public void setBody(String body) {
+		this.body = body;
+	}
+	
+	public String getPriority() {
+		return priority;
+	}
+	
+	public void setPriority(String priority) {
+		this.priority = priority;
+	}
+	
+	public String getTags() {
+		return tags;
+	}
+	
+	public void setTags(String tags) {
+		this.tags = tags;
+	}
+	
+	public Boolean getSpam() {
+		return spam;
+	}
+	
+	public void setSpam(Boolean spam) {
+		this.spam = spam;
+	}
+
+	
+	
+}

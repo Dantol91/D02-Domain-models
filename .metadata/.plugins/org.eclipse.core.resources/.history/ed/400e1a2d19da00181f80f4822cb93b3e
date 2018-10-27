@@ -1,0 +1,22 @@
+
+package domain;
+
+public class CreditCard {
+
+	// Attributes ----------------------------------------------------------------------
+
+	private String	holderName;
+	private String	brandName;
+	private String	number;
+	private String	expirationMonth;
+	private String	expirationYear;
+	private Integer	CVV;
+
+
+	// Constructors -----------------------------------------------------------
+
+	public CreditCard() {
+		super();
+	}
+
+}

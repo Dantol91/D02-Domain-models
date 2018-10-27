@@ -1,0 +1,16 @@
+
+package domain;
+
+public class SocialProfile extends DomainEntity {
+
+	// Constructor
+
+	public SocialProfile() {
+		super();
+	}
+
+
+	// Attributes
+
+	
+}

@@ -1,0 +1,17 @@
+package domain;
+
+
+public class Message {
+
+	
+	// Constructors
+
+	public Message() {
+		super();
+	}
+
+
+	// Atributes
+
+	
+}
