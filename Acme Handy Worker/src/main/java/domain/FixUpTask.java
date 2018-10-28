@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.validation.Valid;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
@@ -80,6 +81,7 @@ public class FixUpTask extends DomainEntity {
 		this.maxPrice = maxPrice;
 	}
 
+	@NotNull
 	public Date getStartDate() {
 		return this.startDate;
 	}
@@ -88,6 +90,7 @@ public class FixUpTask extends DomainEntity {
 		this.startDate = startDate;
 	}
 
+	@NotNull
 	public Date getEndDate() {
 		return this.endDate;
 	}

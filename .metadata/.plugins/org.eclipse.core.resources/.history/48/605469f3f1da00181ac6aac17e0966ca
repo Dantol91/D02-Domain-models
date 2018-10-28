@@ -1,0 +1,14 @@
+
+package domain;
+
+public class EducationRecord extends DomainEntity {
+
+	// Constructor
+
+	public EducationRecord() {
+		super();
+	}
+
+	// Atributes
+
+}

@@ -1,0 +1,19 @@
+
+package domain;
+
+public class MiscellaneousRecord extends DomainEntity {
+
+	// Constructor
+
+	public MiscellaneousRecord() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	title;
+	private String	attachmentLink;
+	
+	
+}

@@ -1,0 +1,23 @@
+package domain;
+
+import java.util.Date;
+
+
+public class Report extends DomainEntity{
+	
+	// Constructor
+
+	public Report() {
+		super();
+	}
+
+
+	// Attributes
+
+	private Date	moment;
+	private String	description;
+	private String	attachmentLink;
+	private boolean	finalMode;
+
+
+}

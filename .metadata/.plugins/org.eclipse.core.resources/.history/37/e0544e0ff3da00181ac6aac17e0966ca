@@ -1,0 +1,15 @@
+package domain;
+
+
+public class Comment extends DomainEntity{
+
+	// Constructor
+
+	public Comment() {
+		super();
+	}
+
+
+	// Attributes
+
+}

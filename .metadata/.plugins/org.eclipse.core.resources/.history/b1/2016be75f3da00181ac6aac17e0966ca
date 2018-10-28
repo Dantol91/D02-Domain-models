@@ -1,0 +1,22 @@
+
+package domain;
+
+public class Finder extends DomainEntity {
+
+	// Constructor
+
+	public Finder() {
+		super();
+	}
+
+	// Attributes
+
+	private String	keyword;
+	private Double	maxPrice;
+	private Double	minPrice;
+	private Date	startDate;
+	private Date	endDate;
+
+
+	
+}

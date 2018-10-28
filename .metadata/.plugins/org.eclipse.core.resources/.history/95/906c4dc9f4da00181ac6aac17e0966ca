@@ -1,0 +1,57 @@
+
+package domain;
+
+import java.util.Date;
+
+public class Complaint extends DomainEntity {
+
+	// Constructors
+
+	public Complaint() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	ticker;
+	private Date	moment;
+	private String	description;
+	private String	attachmentLink;
+
+
+	@Pattern(regexp = "\\d{6}-[A-Z0-9]{6}")
+	@Column(unique = true)
+	public String getTicker() {
+		return this.ticker;
+	}
+
+	public void setTicker(final String ticker) {
+		this.ticker = ticker;
+	}
+
+	public Date getMoment() {
+		return this.moment;
+	}
+
+	public void setMoment(final Date moment) {
+		this.moment = moment;
+	}
+
+	public String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(final String description) {
+		this.description = description;
+	}
+
+	public String getAttachmentLink() {
+		return this.attachmentLink;
+	}
+
+	public void setAttachmentLink(final String attachmentLink) {
+		this.attachmentLink = attachmentLink;
+	}
+
+}

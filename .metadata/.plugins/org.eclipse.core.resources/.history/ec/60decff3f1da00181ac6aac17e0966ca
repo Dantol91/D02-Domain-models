@@ -1,0 +1,22 @@
+
+package domain;
+
+public class EducationRecord extends DomainEntity {
+
+	// Constructor
+
+	public EducationRecord() {
+		super();
+	}
+
+	// Atributes
+
+	private String	diplomaTitle;
+	private Date	startDate;
+	private Date	endDate;
+	private String	institution;
+	private String	attachment;
+	private String	comments;
+	
+	
+}

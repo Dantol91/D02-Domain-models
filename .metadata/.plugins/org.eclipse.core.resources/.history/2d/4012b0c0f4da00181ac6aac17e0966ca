@@ -1,0 +1,22 @@
+
+package domain;
+
+import java.util.Date;
+
+public class Complaint extends DomainEntity {
+
+	// Constructors
+
+	public Complaint() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	ticker;
+	private Date	moment;
+	private String	description;
+	private String	attachmentLink;
+
+}

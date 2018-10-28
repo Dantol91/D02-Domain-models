@@ -1,0 +1,58 @@
+
+package domain;
+
+import java.util.Date;
+
+public class Report extends DomainEntity {
+
+	// Constructor
+
+	public Report() {
+		super();
+	}
+
+
+	// Attributes
+
+	private Date	moment;
+	private String	description;
+	private String	attachmentLink;
+	private boolean	finalMode;
+	
+	@NotNull
+	@Past
+	public Date getMoment() {
+		return moment;
+	}
+	
+	public void setMoment(Date moment) {
+		this.moment = moment;
+	}
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	public String getAttachmentLink() {
+		return attachmentLink;
+	}
+	
+	public void setAttachmentLink(String attachmentLink) {
+		this.attachmentLink = attachmentLink;
+	}
+	
+	public boolean isFinalMode() {
+		return finalMode;
+	}
+	
+	public void setFinalMode(boolean finalMode) {
+		this.finalMode = finalMode;
+	}
+	
+	
+
+}

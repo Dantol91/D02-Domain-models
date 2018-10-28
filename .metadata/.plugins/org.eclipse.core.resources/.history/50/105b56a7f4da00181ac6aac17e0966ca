@@ -1,0 +1,14 @@
+
+package domain;
+
+public class Complaint extends DomainEntity {
+
+	// Constructors
+
+	public Complaint() {
+		super();
+	}
+
+	// Attributes
+
+}

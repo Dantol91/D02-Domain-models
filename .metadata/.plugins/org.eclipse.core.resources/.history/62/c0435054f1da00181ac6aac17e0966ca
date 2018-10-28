@@ -1,0 +1,68 @@
+package domain;
+
+
+public class PersonalRecord extends DomainEntity{
+
+	// Constructor
+
+	public PersonalRecord() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	fullName;
+	private String	photo;
+	private String	email;
+	private String	phone;
+	private String	linkedInProfile;
+	
+	@NotBlank
+	public String getFullName() {
+		return fullName;
+	}
+	
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	
+	public String getPhoto() {
+		return photo;
+	}
+	
+	public void setPhoto(String photo) {
+		this.photo = photo;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	
+	public String getLinkedInProfile() {
+		return linkedInProfile;
+	}
+	
+	public void setLinkedInProfile(String linkedInProfile) {
+		this.linkedInProfile = linkedInProfile;
+	}
+
+
+	
+
+
+
+	
+}
