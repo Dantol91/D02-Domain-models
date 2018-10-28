@@ -1,0 +1,15 @@
+
+package domain;
+
+public class SpamTerm extends DomainEntity {
+	
+	// Constructor
+
+	public SpamTerm() {
+		super();
+	}
+
+
+	// Attributes
+
+}

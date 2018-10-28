@@ -1,0 +1,115 @@
+
+package domain;
+
+import java.util.Collection;
+
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.URL;
+
+public class Customisation extends DomainEntity {
+
+	// Constructors
+
+	public Customisation() {
+		super();
+	}
+
+
+	// Atributes
+
+	private String				systemName;
+	private String				bannerURL;
+	private String				welcomeMessage;
+	private Double				VATnumber;
+	private String				defaultCC;
+	private Collection<String>	creditCardMakes;
+	private Integer				defaultFinderNumber;
+	private Integer				defaultCacheTime;
+	private Collection<String>	positiveWords;
+	private Collection<String>	negativeWords;
+
+
+	@NotBlank
+	public String getSystemName() {
+		return this.systemName;
+	}
+
+	public void setSystemName(final String systemName) {
+		this.systemName = systemName;
+	}
+
+	@NotBlank
+	@URL
+	public String getBannerURL() {
+		return this.bannerURL;
+	}
+
+	public void setBannerURL(final String bannerURL) {
+		this.bannerURL = bannerURL;
+	}
+
+	public String getWelcomeMessage() {
+		return this.welcomeMessage;
+	}
+
+	public void setWelcomeMessage(final String welcomeMessage) {
+		this.welcomeMessage = welcomeMessage;
+	}
+
+	public Double getVATnumber() {
+		return this.VATnumber;
+	}
+
+	public void setVATnumber(final Double vATnumber) {
+		this.VATnumber = vATnumber;
+	}
+
+	public String getDefaultCC() {
+		return this.defaultCC;
+	}
+
+	public void setDefaultCC(final String defaultCC) {
+		this.defaultCC = defaultCC;
+	}
+
+	public Collection<String> getCreditCardMakes() {
+		return this.creditCardMakes;
+	}
+
+	public void setCreditCardMakes(final Collection<String> creditCardMakes) {
+		this.creditCardMakes = creditCardMakes;
+	}
+
+	public Integer getDefaultFinderNumber() {
+		return this.defaultFinderNumber;
+	}
+
+	public void setDefaultFinderNumber(final Integer defaultFinderNumber) {
+		this.defaultFinderNumber = defaultFinderNumber;
+	}
+
+	public Integer getDefaultCacheTime() {
+		return this.defaultCacheTime;
+	}
+
+	public void setDefaultCacheTime(final Integer defaultCacheTime) {
+		this.defaultCacheTime = defaultCacheTime;
+	}
+
+	public Collection<String> getPositiveWords() {
+		return this.positiveWords;
+	}
+
+	public void setPositiveWords(final Collection<String> positiveWords) {
+		this.positiveWords = positiveWords;
+	}
+
+	public Collection<String> getNegativeWords() {
+		return this.negativeWords;
+	}
+
+	public void setNegativeWords(final Collection<String> negativeWords) {
+		this.negativeWords = negativeWords;
+	}
+
+}
