@@ -72,10 +72,7 @@ public class Finder extends DomainEntity {
 		this.startDate = startDate;
 	}
 
-	@Past
 	@NotNull
-	@Temporal(TemporalType.DATE)
-	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getEndDate() {
 		return this.endDate;
 	}

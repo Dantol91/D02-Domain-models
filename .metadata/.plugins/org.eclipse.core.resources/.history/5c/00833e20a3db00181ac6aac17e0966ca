@@ -77,8 +77,6 @@ public class Customisation extends DomainEntity {
 		this.positiveWords = positiveWords;
 	}
 
-	@ElementCollection
-	@NotEmpty
 	public Collection<String> getNegativeWords() {
 		return this.negativeWords;
 	}
