@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.hibernate.tool.hbm2ddl.Target"/>
-<fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
-<fullyQualifiedTypeName name="org.apache.commons.beanutils.BeanUtils"/>
-<fullyQualifiedTypeName name="org.hibernate.annotations.common.AssertionFailure"/>
-<fullyQualifiedTypeName name="repositories.ExamRepository"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="services.ReviewerService"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang.builder.ReflectionToStringBuilder"/>
@@ -60,4 +54,10 @@
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Range"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Digits"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Access"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
 </qualifiedTypeNameHistroy>
