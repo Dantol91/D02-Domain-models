@@ -1,0 +1,76 @@
+
+package domain;
+
+import java.util.Date;
+
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Past;
+
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.URL;
+
+public class EducationRecord extends DomainEntity {
+
+	// Constructor
+
+	public EducationRecord() {
+		super();
+	}
+
+
+	// Atributes
+
+	private String	diplomaTitle;
+	private Date	startDate;
+	private Date	endDate;
+	private String	institution;
+	private String	attachmentLink;
+
+
+	@NotBlank
+	public String getDiplomaTitle() {
+		return this.diplomaTitle;
+	}
+
+	public void setDiplomaTitle(final String diplomaTitle) {
+		this.diplomaTitle = diplomaTitle;
+	}
+
+	@NotNull
+	@Past
+	public Date getStartDate() {
+		return this.startDate;
+	}
+
+	public void setStartDate(final Date startDate) {
+		this.startDate = startDate;
+	}
+
+	@NotNull
+	public Date getEndDate() {
+		return this.endDate;
+	}
+
+	public void setEndDate(final Date endDate) {
+		this.endDate = endDate;
+	}
+
+	@NotBlank
+	public String getInstitution() {
+		return this.institution;
+	}
+
+	public void setInstitution(final String institution) {
+		this.institution = institution;
+	}
+
+	@URL
+	public String getAttachmentLink() {
+		return this.attachmentLink;
+	}
+
+	public void setAttachmentLink(final String attachmentLink) {
+		this.attachmentLink = attachmentLink;
+	}
+
+}

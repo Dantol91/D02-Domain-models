@@ -1,9 +1,14 @@
 
 package domain;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.validation.constraints.Pattern;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class Curriculum extends DomainEntity {
 
 	// Constructors

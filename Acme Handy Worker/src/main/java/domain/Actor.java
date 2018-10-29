@@ -1,13 +1,19 @@
 
 package domain;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
+@Entity
+@Access(AccessType.PROPERTY)
 public class Actor extends DomainEntity {
 
-	// Attributes ----------------------------------------------------------------------
+	// Attributes 
 
 	private String	name;
 	private String	middleName;
@@ -19,7 +25,7 @@ public class Actor extends DomainEntity {
 	private boolean	suspicious;
 
 
-	// Constructors -----------------------------------------------------------
+	// Constructors 
 
 	public Actor() {
 		super();
