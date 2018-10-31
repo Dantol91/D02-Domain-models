@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="67" version="2.0">
+<workbench progressCount="68" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="951" x="320" y="75">
+<window height="768" maximized="true" width="951" x="7" y="75">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -13,7 +13,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="124" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="88" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="98" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="247" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="131" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="39" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -30,7 +30,7 @@
 <coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jpt.jpa.ui.internal.editors.PersistenceEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
@@ -41,16 +41,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Application.java" partName="Application.java" path="E:/D02-Domain-models/Acme Handy Worker/src/main/java/domain/Application.java" title="Application.java" tooltip="Acme Handy Worker/src/main/java/domain/Application.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Acme Handy Worker/src/main/java/domain/Application.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="210"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -97,10 +91,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="219" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="408"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -116,7 +106,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -214,7 +204,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c02bc48" ratio="0.6159601" ratioLeft="494" ratioRight="308" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c6ae889">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c02bc48" ratio="0.7972637" ratioLeft="641" ratioRight="163" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c6ae889">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
@@ -285,202 +275,18 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2056984" ratioLeft="296" ratioRight="1143" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5c6ae889"/>
+<info part="org.eclipse.ui.editorss" ratio="0.13579512" ratioLeft="228" ratioRight="1451" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5c6ae889"/>
 </mainWindow>
 </layout>
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/FixUpTask.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/EducationRecord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/MiscellaneousRecord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Finder.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Note.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/EndorserRecord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Endorsement.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Section.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/SpamTerm.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Customisation.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/HandyWorker.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Message.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/PersonalRecord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Phase.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/ProfessionalRecord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Referee.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Report.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/SocialProfile.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Sponsor.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Sponsorship.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Tutorial.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Warranty.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Acme Handy Worker/src/main/java/domain/Application.java"/>
-</editors>
-<item historyLabel="HandyWorker.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Message.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MiscellaneousRecord.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Note.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="EducationRecord.java" index="1">
-<position info="not_deleted" x="386" y="0"/>
-</item>
-<item historyLabel="Note.java" index="4">
-<position info="not_deleted" x="383" y="0"/>
-</item>
-<item historyLabel="MiscellaneousRecord.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Endorsement.java" index="6">
-<position info="not_deleted" x="337" y="0"/>
-</item>
-<item historyLabel="MiscellaneousRecord.java" index="2">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="Message.java" index="11">
-<position info="not_deleted" x="383" y="0"/>
-</item>
-<item historyLabel="HandyWorker.java" index="10">
-<position info="not_deleted" x="318" y="0"/>
-</item>
-<item historyLabel="FixUpTask.java" index="0">
-<position info="not_deleted" x="536" y="0"/>
-</item>
-<item historyLabel="Finder.java" index="3">
-<position/>
-</item>
-<item historyLabel="EndorserRecord.java" index="5">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="PersonalRecord.java" index="12">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Phase.java" index="13">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProfessionalRecord.java" index="14">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Referee.java" index="15">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Report.java" index="16">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Section.java" index="7">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SocialProfile.java" index="17">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SpamTerm.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Sponsor.java" index="18">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Sponsorship.java" index="19">
-<position/>
-</item>
-<item historyLabel="Tutorial.java" index="20">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Warranty.java" index="21">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ProfessionalRecord.java" index="14">
-<position info="not_deleted" x="386" y="0"/>
-</item>
-<item historyLabel="Warranty.java" index="21">
-<position info="not_deleted" x="222" y="0"/>
-</item>
-<item historyLabel="Tutorial.java" index="20">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PersonalRecord.java" index="12">
-<position info="not_deleted" x="322" y="0"/>
-</item>
-<item historyLabel="Tutorial.java" index="20">
-<position info="not_deleted" x="386" y="0"/>
-</item>
-<item historyLabel="Sponsorship.java" index="19">
-<position/>
-</item>
-<item historyLabel="Phase.java" index="13">
-<position info="not_deleted" x="248" y="0"/>
-</item>
-<item historyLabel="Sponsorship.java" index="19">
-<position/>
-</item>
-<item historyLabel="Sponsor.java" index="18">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="SpamTerm.java" index="8">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SocialProfile.java" index="17">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="Section.java" index="7">
-<position info="not_deleted" x="271" y="0"/>
-</item>
-<item historyLabel="Report.java" index="16">
-<position info="not_deleted" x="386" y="0"/>
-</item>
-<item historyLabel="Referee.java" index="15">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="Customisation.java" index="9">
-<position/>
-</item>
-<item historyLabel="Customisation.java" index="9">
-<position info="not_deleted" x="1874" y="0"/>
-</item>
-<item historyLabel="Sponsorship.java" index="19">
-<position info="not_deleted" x="633" y="0"/>
-</item>
-<item historyLabel="Application.java" index="22">
-<position/>
-</item>
-<item historyLabel="Finder.java" index="3">
-<position info="not_deleted" x="1013" y="0"/>
-</item>
-<item historyLabel="Application.java" index="22">
-<position/>
-</item>
-<item historyLabel="Finder.java" index="3">
-<position info="not_deleted" x="1013" y="0"/>
-</item>
-<item historyLabel="Application.java" index="22">
-<position info="not_deleted" x="896" y="90"/>
-</item>
-<item historyLabel="Finder.java" index="3">
-<position info="not_deleted" x="1504" y="0"/>
-</item>
-<item active="true" historyLabel="Application.java" index="22">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@4c02bc48"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5c6ae889"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@3edd044d"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@42137ac0"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 <trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
@@ -489,7 +295,6 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@631ebf05"/>
 </trimArea>
 </trimLayout>
 </window>
