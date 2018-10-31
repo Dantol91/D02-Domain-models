@@ -1,19 +1,16 @@
 
 package domain;
 
+import java.util.Collection;
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Report extends DomainEntity {
 
 	// Constructor
@@ -33,6 +30,7 @@ public class Report extends DomainEntity {
 
 	@NotNull
 	@Past
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getMoment() {
 		return this.moment;
 	}
@@ -65,6 +63,21 @@ public class Report extends DomainEntity {
 
 	public void setFinalMode(final boolean finalMode) {
 		this.finalMode = finalMode;
+	}
+
+
+	// Relationships
+
+	private Collection<Note>	notes;
+
+
+	@NotNull
+	public Collection<Note> getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(final Collection<Note> notes) {
+		this.notes = notes;
 	}
 
 }

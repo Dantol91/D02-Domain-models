@@ -3,16 +3,12 @@ package domain;
 
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Endorsement extends DomainEntity {
 
 	// Constructors
@@ -30,6 +26,7 @@ public class Endorsement extends DomainEntity {
 
 	@Past
 	@NotNull
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getMoment() {
 		return this.moment;
 	}
@@ -46,5 +43,7 @@ public class Endorsement extends DomainEntity {
 	public void setComment(final String comment) {
 		this.comment = comment;
 	}
+
+	// Relationships
 
 }

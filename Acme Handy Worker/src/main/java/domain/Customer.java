@@ -1,15 +1,13 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
+
+import javax.validation.Valid;
 import javax.validation.constraints.Digits;
 
 import org.hibernate.validator.constraints.Range;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Customer extends Actor {
 
 	// Constructors
@@ -32,6 +30,21 @@ public class Customer extends Actor {
 
 	public void setScore(final Double score) {
 		this.score = score;
+	}
+
+
+	// Relationships
+
+	private Collection<FixUpTask>	fixUpTasks;
+
+
+	@Valid
+	public Collection<FixUpTask> getFixUpTasks() {
+		return this.fixUpTasks;
+	}
+
+	public void setFixUpTasks(final Collection<FixUpTask> fixUpTasks) {
+		this.fixUpTasks = fixUpTasks;
 	}
 
 }

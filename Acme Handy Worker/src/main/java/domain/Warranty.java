@@ -1,14 +1,8 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-
 import org.hibernate.validator.constraints.NotBlank;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Warranty extends DomainEntity {
 
 	// Constructor
@@ -22,7 +16,7 @@ public class Warranty extends DomainEntity {
 
 	private String	title;
 	private String	terms;
-	private Boolean	finalMode;
+	private boolean	finalMode;
 	private String	laws;
 
 
@@ -44,11 +38,11 @@ public class Warranty extends DomainEntity {
 		this.terms = terms;
 	}
 
-	public Boolean getFinalMode() {
+	public boolean getFinalMode() {
 		return this.finalMode;
 	}
 
-	public void setFinalMode(final Boolean finalMode) {
+	public void setFinalMode(final boolean finalMode) {
 		this.finalMode = finalMode;
 	}
 
@@ -60,5 +54,7 @@ public class Warranty extends DomainEntity {
 	public void setLaws(final String laws) {
 		this.laws = laws;
 	}
+
+	// Relationships
 
 }

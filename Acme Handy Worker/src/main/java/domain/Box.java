@@ -1,14 +1,12 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
+
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Box extends DomainEntity {
 
 	// Constructors
@@ -21,7 +19,7 @@ public class Box extends DomainEntity {
 	// Attributes 
 
 	private String	name;
-	private Boolean	systemBox;
+	private boolean	systemBox;
 
 
 	@NotBlank
@@ -33,12 +31,47 @@ public class Box extends DomainEntity {
 		this.name = name;
 	}
 
-	public Boolean getSystemBox() {
+	public boolean getSystemBox() {
 		return this.systemBox;
 	}
 
-	public void setSystemBox(final Boolean systemBox) {
+	public void setSystemBox(final boolean systemBox) {
 		this.systemBox = systemBox;
+	}
+
+
+	// Relationships
+
+	private Collection<Message>	messages;
+	private Collection<Box>		childBoxes;
+	private Box					parentBox;
+
+
+	@NotNull
+	public Collection<Message> getMessages() {
+		return this.messages;
+	}
+
+	public void setMessages(final Collection<Message> messages) {
+		this.messages = messages;
+	}
+
+	@NotNull
+	public Collection<Box> getChildBoxes() {
+		return this.childBoxes;
+	}
+
+	public void setChildBoxes(final Collection<Box> childBoxes) {
+		this.childBoxes = childBoxes;
+	}
+
+	@NotNull
+	public Box getParentBoxes() {
+		return this.parentBox;
+	}
+
+	public void setParentBoxe(final Box parentBox) {
+		this.parentBox = parentBox;
 	}
 
 }

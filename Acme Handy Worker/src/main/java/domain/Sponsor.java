@@ -1,17 +1,34 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
 
-@Entity
-@Access(AccessType.PROPERTY)
+import javax.validation.Valid;
+
 public class Sponsor extends Actor {
 
 	// Constructor
 
 	public Sponsor() {
 		super();
+
 	}
+
+
+	// Attributes
+
+	// Relationships
+
+	private Collection<Sponsorship>	sponsorships;
+
+
+	@Valid
+	public Collection<Sponsorship> getSponsorships() {
+		return this.sponsorships;
+	}
+
+	public void setSponsorships(final Collection<Sponsorship> sponsorships) {
+		this.sponsorships = sponsorships;
+	}
+
 }

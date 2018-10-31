@@ -1,0 +1,16 @@
+
+package domain;
+
+public class Endorse extends DomainEntity {
+
+	// Constructor
+
+	public Endorse() {
+		super();
+	}
+
+	// Attributes
+
+	// Relationships
+
+}

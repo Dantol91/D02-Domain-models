@@ -1,16 +1,18 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
+
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 import org.hibernate.validator.constraints.URL;
 
-@Entity
-@Access(AccessType.PROPERTY)
+import security.UserAccount;
+
 public class Actor extends DomainEntity {
 
 	// Attributes 
@@ -57,7 +59,6 @@ public class Actor extends DomainEntity {
 		this.surname = surname;
 	}
 
-	@NotBlank
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -67,6 +68,7 @@ public class Actor extends DomainEntity {
 		this.email = email;
 	}
 
+	@NotBlank
 	public String getPhone() {
 		return this.phone;
 	}
@@ -75,6 +77,7 @@ public class Actor extends DomainEntity {
 		this.phone = phone;
 	}
 
+	@NotBlank
 	public String getAddress() {
 		return this.address;
 	}
@@ -98,6 +101,52 @@ public class Actor extends DomainEntity {
 
 	public void setSuspicious(final boolean suspicious) {
 		this.suspicious = suspicious;
+	}
+
+
+	// Relationships
+
+	private UserAccount					userAccount;
+	private Collection<Box>				boxes;
+	private Collection<SocialProfile>	socialProfiles;
+	private Collection<Message>			messages;
+
+
+	@NotNull
+	@Valid
+	public UserAccount getUserAccount() {
+		return this.userAccount;
+	}
+
+	public void setUserAccount(final UserAccount userAccount) {
+		this.userAccount = userAccount;
+	}
+
+	@NotEmpty
+	public Collection<Box> getBoxes() {
+		return this.boxes;
+	}
+
+	public void setBoxes(final Collection<Box> boxes) {
+		this.boxes = boxes;
+	}
+
+	@NotNull
+	public Collection<SocialProfile> getSocialProfiles() {
+		return this.socialProfiles;
+	}
+
+	public void setSocialProfiles(final Collection<SocialProfile> socialProfiles) {
+		this.socialProfiles = socialProfiles;
+	}
+
+	@NotNull
+	public Collection<Message> getMessages() {
+		return this.messages;
+	}
+
+	public void setMessages(final Collection<Message> messages) {
+		this.messages = messages;
 	}
 
 }

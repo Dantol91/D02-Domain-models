@@ -1,0 +1,72 @@
+
+package domain;
+
+import java.util.Collection;
+
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+public class Category extends DomainEntity {
+
+	// Constructor
+
+	public Category() {
+		super();
+	}
+
+
+	// Attributes
+
+	private String	name;
+
+
+	@NotBlank
+	public String getName() {
+		return this.name;
+	}
+
+	public void setName(final String name) {
+		this.name = name;
+	}
+
+
+	// Relationships
+
+	private Collection<FixUpTask>	fixUpTasks;
+	private Category				parentCategory;
+	private Collection<Category>	childCategories;
+
+
+	@NotNull
+	public Collection<FixUpTask> getFixUpTasks() {
+		return this.fixUpTasks;
+	}
+
+	public void setFixUpTasks(final Collection<FixUpTask> fixUpTasks) {
+		this.fixUpTasks = fixUpTasks;
+	}
+
+	@Valid
+	public Category getParentCategory() {
+		return parentCategory;
+	}
+
+	
+	public void setParentCategory(Category parentCategory) {
+		this.parentCategory = parentCategory;
+	}
+
+	
+	public Collection<Category> getChildCategories() {
+		return childCategories;
+	}
+
+	
+	public void setChildCategories(Collection<Category> childCategories) {
+		this.childCategories = childCategories;
+	}
+	
+	
+
+}

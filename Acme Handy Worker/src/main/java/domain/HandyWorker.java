@@ -1,16 +1,15 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
+
+import javax.validation.Valid;
 import javax.validation.constraints.Digits;
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.Range;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class HandyWorker extends Actor {
 
 	// Constructor
@@ -23,7 +22,7 @@ public class HandyWorker extends Actor {
 	// Atributes
 
 	private String	make;
-	private Double	score;
+	private double	score;
 
 
 	@NotBlank
@@ -37,12 +36,58 @@ public class HandyWorker extends Actor {
 
 	@Digits(integer = 3, fraction = 2)
 	@Range(min = -1, max = 1)
-	public Double getScore() {
+	public double getScore() {
 		return this.score;
 	}
 
-	public void setScore(final Double score) {
+	public void setScore(final double score) {
 		this.score = score;
+	}
+
+
+	// Relationships
+
+	private Collection<Tutorial>	tutorials;
+	private Curriculum				curriculum;
+	private Finder					finder;
+	private Collection<Application>	applications;
+
+
+	@NotNull
+	public Collection<Tutorial> getTutorials() {
+		return this.tutorials;
+	}
+
+	public void setTutorials(final Collection<Tutorial> tutorials) {
+		this.tutorials = tutorials;
+	}
+
+	@Valid
+	public Curriculum getCurriculum() {
+		return this.curriculum;
+	}
+
+	public void setCurriculum(final Curriculum curriculum) {
+		this.curriculum = curriculum;
+	}
+
+	@NotNull
+	@Valid
+	public Finder getFinder() {
+		return this.finder;
+	}
+
+	public void setFinder(final Finder finder) {
+		this.finder = finder;
+	}
+
+	@NotNull
+	public Collection<Application> getApplications() {
+		return this.applications;
+	}
+
+	public void setApplications(final Collection<Application> applications) {
+		this.applications = applications;
 	}
 
 }

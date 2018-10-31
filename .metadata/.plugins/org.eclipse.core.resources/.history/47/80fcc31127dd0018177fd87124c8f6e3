@@ -1,0 +1,19 @@
+
+package domain;
+
+
+public class Referee extends Actor {
+
+	// Constructor
+
+	public Referee() {
+		super();
+	}
+
+	// Attributes
+
+	// Relationships
+	
+	private Collection<Complaint> complaints;
+	
+}

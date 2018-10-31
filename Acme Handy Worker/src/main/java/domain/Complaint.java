@@ -3,19 +3,15 @@ package domain;
 
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Complaint extends DomainEntity {
 
 	// Constructors
@@ -33,8 +29,7 @@ public class Complaint extends DomainEntity {
 	private String	attachmentLink;
 
 
-	@Pattern(regexp = "\\d{6}-[A-Z0-9]{6}")
-	@Column(unique = true)
+	@Pattern(regexp = "^\\d[0-1]\\d[0-3]\\d[-]\\w{6}+$")
 	public String getTicker() {
 		return this.ticker;
 	}
@@ -43,8 +38,9 @@ public class Complaint extends DomainEntity {
 		this.ticker = ticker;
 	}
 
-	@NotNull
 	@Past
+	@NotNull
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getMoment() {
 		return this.moment;
 	}
@@ -69,6 +65,32 @@ public class Complaint extends DomainEntity {
 
 	public void setAttachmentLink(final String attachmentLink) {
 		this.attachmentLink = attachmentLink;
+	}
+
+
+	// Relationships
+
+	private FixUpTask	fixUpTask;
+	private Report		report;
+
+
+	@NotNull
+	@Valid
+	public FixUpTask getFixUpTask() {
+		return this.fixUpTask;
+	}
+
+	public void setFixUpTask(final FixUpTask fixUpTask) {
+		this.fixUpTask = fixUpTask;
+	}
+
+	@Valid
+	public Report getReport() {
+		return this.report;
+	}
+
+	public void setReport(final Report report) {
+		this.report = report;
 	}
 
 }

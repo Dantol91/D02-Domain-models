@@ -1,0 +1,21 @@
+
+package domain;
+
+import java.util.Collection;
+
+public class Endorse extends DomainEntity {
+
+	// Constructor
+
+	public Endorse() {
+		super();
+	}
+
+
+	// Attributes
+
+	// Relationships
+
+	private Collection<Endorsement>	endorsements;
+
+}

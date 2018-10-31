@@ -1,16 +1,14 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
+
+import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.CreditCardNumber;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.Range;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class CreditCard extends DomainEntity {
 
 	// Attributes ----------------------------------------------------------------------
@@ -18,9 +16,9 @@ public class CreditCard extends DomainEntity {
 	private String	holderName;
 	private String	brandName;
 	private String	number;
-	private Integer	expirationMonth;
-	private Integer	expirationYear;
-	private Integer	CVV;
+	private int		expirationMonth;
+	private int		expirationYear;
+	private int		CVV;
 
 
 	// Constructors -----------------------------------------------------------
@@ -59,30 +57,45 @@ public class CreditCard extends DomainEntity {
 
 	@NotBlank
 	@Range(min = 1, max = 12)
-	public Integer getExpirationMonth() {
+	public int getExpirationMonth() {
 		return this.expirationMonth;
 	}
 
-	public void setExpirationMonth(final Integer expirationMonth) {
+	public void setExpirationMonth(final int expirationMonth) {
 		this.expirationMonth = expirationMonth;
 	}
 
 	@Range(min = 0, max = 99)
-	public Integer getExpirationYear() {
+	public int getExpirationYear() {
 		return this.expirationYear;
 	}
 
-	public void setExpirationYear(final Integer expirationYear) {
+	public void setExpirationYear(final int expirationYear) {
 		this.expirationYear = expirationYear;
 	}
 
 	@Range(min = 100, max = 999)
-	public Integer getCVV() {
+	public int getCVV() {
 		return this.CVV;
 	}
 
-	public void setCVV(final Integer CVV) {
+	public void setCVV(final int CVV) {
 		this.CVV = CVV;
+	}
+
+
+	// Relationships
+
+	private Collection<Application>	applications;
+
+
+	@NotNull
+	public Collection<Application> getApplications() {
+		return this.applications;
+	}
+
+	public void setApplications(final Collection<Application> applications) {
+		this.applications = applications;
 	}
 
 }

@@ -1,0 +1,34 @@
+
+package domain;
+
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+
+@Entity
+@Access(AccessType.PROPERTY)
+public class Customisation extends DomainEntity {
+
+	// Constructors
+
+	public Customisation() {
+		super();
+	}
+
+
+	// Atributes
+
+	private String				bannerURL;
+	private String				welcomeMessage;
+	private double				VATTax;
+	private String				countryCode;
+	private Collection<String>	spamWords;
+	private Collection<String>	creditCardMakes;
+	private int					finderReturn;
+	private double				finderCache;
+	private Collection<String>	positiveWords;
+	private Collection<String>	negativeWords;
+
+}

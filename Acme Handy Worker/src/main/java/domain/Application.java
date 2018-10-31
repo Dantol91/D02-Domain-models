@@ -3,11 +3,6 @@ package domain;
 
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -16,8 +11,6 @@ import javax.validation.constraints.Pattern;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Application extends DomainEntity {
 
 	// Constructors
@@ -31,14 +24,13 @@ public class Application extends DomainEntity {
 
 	private Date	registerMoment;
 	private String	status;
-	private Double	offeredPrice;
+	private double	offeredPrice;
 	private String	comment;
 	private String	reasonDenied;
 
 
 	@Past
 	@NotNull
-	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getRegisterMoment() {
 		return this.registerMoment;
@@ -59,11 +51,11 @@ public class Application extends DomainEntity {
 
 	@Min(0)
 	@Valid
-	public Double getOfferedPrice() {
+	public double getOfferedPrice() {
 		return this.offeredPrice;
 	}
 
-	public void setOfferedPrice(final Double offeredPrice) {
+	public void setOfferedPrice(final double offeredPrice) {
 		this.offeredPrice = offeredPrice;
 	}
 
@@ -81,6 +73,43 @@ public class Application extends DomainEntity {
 
 	public void setReasonDenied(final String reasonDenied) {
 		this.reasonDenied = reasonDenied;
+	}
+
+
+	// Relationships
+
+	private CreditCard	creditcard;
+	private HandyWorker	handyWorker;
+	private FixUpTask	fixUpTask;
+
+
+	@Valid
+	public CreditCard getCreditcard() {
+		return this.creditcard;
+	}
+
+	@NotNull
+	@Valid
+	public HandyWorker getHandyWorker() {
+		return this.handyWorker;
+	}
+
+	public void setHandyWorker(final HandyWorker handyWorker) {
+		this.handyWorker = handyWorker;
+	}
+
+	@NotNull
+	@Valid
+	public FixUpTask getFixUpTask() {
+		return this.fixUpTask;
+	}
+
+	public void setFixUpTask(final FixUpTask fixUpTask) {
+		this.fixUpTask = fixUpTask;
+	}
+
+	public void setCreditcard(final CreditCard creditcard) {
+		this.creditcard = creditcard;
 	}
 
 }

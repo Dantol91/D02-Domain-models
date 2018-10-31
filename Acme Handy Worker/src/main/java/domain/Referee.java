@@ -1,12 +1,10 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
+import java.util.Collection;
 
-@Entity
-@Access(AccessType.PROPERTY)
+import javax.validation.constraints.NotNull;
+
 public class Referee extends Actor {
 
 	// Constructor
@@ -14,4 +12,22 @@ public class Referee extends Actor {
 	public Referee() {
 		super();
 	}
+
+
+	// Attributes
+
+	// Relationships
+
+	private Collection<Complaint>	complaints;
+
+
+	@NotNull
+	public Collection<Complaint> getComplaints() {
+		return this.complaints;
+	}
+
+	public void setComplaints(final Collection<Complaint> complaints) {
+		this.complaints = complaints;
+	}
+
 }

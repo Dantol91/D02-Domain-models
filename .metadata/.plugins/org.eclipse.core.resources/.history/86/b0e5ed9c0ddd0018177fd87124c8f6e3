@@ -1,0 +1,118 @@
+
+package domain;
+
+import java.util.Collection;
+
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+@Entity
+@Access(AccessType.PROPERTY)
+public class Customisation extends DomainEntity {
+
+	// Constructors
+
+	public Customisation() {
+		super();
+	}
+
+
+	// Atributes
+
+	private String				bannerURL;
+	private String				welcomeMessage;
+	private double				VATTax;
+	private String				countryCode;
+	private Collection<String>	spamWords;
+	private Collection<String>	creditCardMakes;
+	private int					finderReturn;
+	private double				finderCache;
+	private Collection<String>	positiveWords;
+	private Collection<String>	negativeWords;
+
+
+	@NotBlank
+	public String getBannerURL() {
+		return this.bannerURL;
+	}
+
+	public void setBannerURL(final String bannerURL) {
+		this.bannerURL = bannerURL;
+	}
+
+	public String getWelcomeMessage() {
+		return this.welcomeMessage;
+	}
+
+	public void setWelcomeMessage(final String welcomeMessage) {
+		this.welcomeMessage = welcomeMessage;
+	}
+
+	public double getVATTax() {
+		return this.VATTax;
+	}
+
+	public void setVATTax(final double vATTax) {
+		this.VATTax = vATTax;
+	}
+
+	public String getCountryCode() {
+		return this.countryCode;
+	}
+
+	public void setCountryCode(final String countryCode) {
+		this.countryCode = countryCode;
+	}
+
+	public Collection<String> getSpamWords() {
+		return this.spamWords;
+	}
+
+	public void setSpamWords(final Collection<String> spamWords) {
+		this.spamWords = spamWords;
+	}
+
+	public Collection<String> getCreditCardMakes() {
+		return this.creditCardMakes;
+	}
+
+	public void setCreditCardMakes(final Collection<String> creditCardMakes) {
+		this.creditCardMakes = creditCardMakes;
+	}
+
+	public int getFinderReturn() {
+		return this.finderReturn;
+	}
+
+	public void setFinderReturn(final int finderReturn) {
+		this.finderReturn = finderReturn;
+	}
+
+	public double getFinderCache() {
+		return this.finderCache;
+	}
+
+	public void setFinderCache(final double finderCache) {
+		this.finderCache = finderCache;
+	}
+
+	public Collection<String> getPositiveWords() {
+		return this.positiveWords;
+	}
+
+	public void setPositiveWords(final Collection<String> positiveWords) {
+		this.positiveWords = positiveWords;
+	}
+
+	public Collection<String> getNegativeWords() {
+		return this.negativeWords;
+	}
+
+	public void setNegativeWords(final Collection<String> negativeWords) {
+		this.negativeWords = negativeWords;
+	}
+
+}

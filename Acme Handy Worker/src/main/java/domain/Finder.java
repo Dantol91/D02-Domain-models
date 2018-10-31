@@ -1,21 +1,14 @@
 
 package domain;
 
+import java.util.Collection;
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class Finder extends DomainEntity {
 
 	// Constructor
@@ -28,8 +21,8 @@ public class Finder extends DomainEntity {
 	// Attributes
 
 	private String	keyword;
-	private Double	maxPrice;
-	private Double	minPrice;
+	private double	maxPrice;
+	private double	minPrice;
 	private Date	startDate;
 	private Date	endDate;
 
@@ -43,26 +36,24 @@ public class Finder extends DomainEntity {
 	}
 
 	@Valid
-	public Double getMaxPrice() {
+	public double getMaxPrice() {
 		return this.maxPrice;
 	}
 
-	public void setMaxPrice(final Double maxPrice) {
+	public void setMaxPrice(final double maxPrice) {
 		this.maxPrice = maxPrice;
 	}
 
 	@Valid
-	public Double getMinPrice() {
+	public double getMinPrice() {
 		return this.minPrice;
 	}
 
-	public void setMinPrice(final Double minPrice) {
+	public void setMinPrice(final double minPrice) {
 		this.minPrice = minPrice;
 	}
 
-	@Past
 	@NotNull
-	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getStartDate() {
 		return this.startDate;
@@ -72,9 +63,6 @@ public class Finder extends DomainEntity {
 		this.startDate = startDate;
 	}
 
-	@Past
-	@NotNull
-	@Temporal(TemporalType.DATE)
 	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getEndDate() {
 		return this.endDate;
@@ -82,6 +70,21 @@ public class Finder extends DomainEntity {
 
 	public void setEndDate(final Date endDate) {
 		this.endDate = endDate;
+	}
+
+
+	// Relationships
+
+	private Collection<FixUpTask>	fixUpTasks;
+
+
+	@NotNull
+	public Collection<FixUpTask> getFixUpTasks() {
+		return this.fixUpTasks;
+	}
+
+	public void setFixUpTasks(final Collection<FixUpTask> fixUpTasks) {
+		this.fixUpTasks = fixUpTasks;
 	}
 
 }

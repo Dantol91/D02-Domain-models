@@ -1,16 +1,10 @@
 
 package domain;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Entity;
-
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.URL;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class PersonalRecord extends DomainEntity {
 
 	// Constructor
@@ -38,7 +32,6 @@ public class PersonalRecord extends DomainEntity {
 		this.fullName = fullName;
 	}
 
-	@NotBlank
 	@URL
 	public String getPhoto() {
 		return this.photo;
@@ -48,7 +41,6 @@ public class PersonalRecord extends DomainEntity {
 		this.photo = photo;
 	}
 
-	@NotBlank
 	@Email
 	public String getEmail() {
 		return this.email;
@@ -67,7 +59,6 @@ public class PersonalRecord extends DomainEntity {
 		this.phone = phone;
 	}
 
-	@NotBlank
 	@URL
 	public String getLinkedInProfile() {
 		return this.linkedInProfile;
@@ -76,5 +67,7 @@ public class PersonalRecord extends DomainEntity {
 	public void setLinkedInProfile(final String linkedInProfile) {
 		this.linkedInProfile = linkedInProfile;
 	}
+
+	// Relationships
 
 }

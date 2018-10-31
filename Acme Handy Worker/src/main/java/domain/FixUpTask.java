@@ -1,23 +1,18 @@
 
 package domain;
 
+import java.util.Collection;
 import java.util.Date;
 
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Column;
-import javax.persistence.Entity;
 import javax.validation.Valid;
-import javax.validation.constraints.Digits;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.springframework.format.annotation.DateTimeFormat;
 
-@Entity
-@Access(AccessType.PROPERTY)
 public class FixUpTask extends DomainEntity {
 
 	// Constructors
@@ -30,7 +25,7 @@ public class FixUpTask extends DomainEntity {
 	// Atributes
 
 	private String	ticker;
-	private Date	moment;
+	private Date	publicationDate;
 	private String	description;
 	private String	address;
 	private Double	maxPrice;
@@ -38,8 +33,7 @@ public class FixUpTask extends DomainEntity {
 	private Date	endDate;
 
 
-	@Pattern(regexp = "\\d{6}-[A-Z0-9]{6}")
-	@Column(unique = true)
+	@Pattern(regexp = "^\\d[0-1]\\d[0-3]\\d[-]\\w{6}+$")
 	public String getTicker() {
 		return this.ticker;
 	}
@@ -48,13 +42,15 @@ public class FixUpTask extends DomainEntity {
 		this.ticker = ticker;
 	}
 
+	@NotNull
 	@Past
-	public Date getMoment() {
-		return this.moment;
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
+	public Date getPublicationDate() {
+		return this.publicationDate;
 	}
 
-	public void setMoment(final Date moment) {
-		this.moment = moment;
+	public void setPublicationDate(final Date publicationDate) {
+		this.publicationDate = publicationDate;
 	}
 
 	@NotBlank
@@ -76,7 +72,6 @@ public class FixUpTask extends DomainEntity {
 	}
 
 	@Min(0)
-	@Digits(integer = 9, fraction = 2)
 	@Valid
 	public Double getMaxPrice() {
 		return this.maxPrice;
@@ -87,6 +82,7 @@ public class FixUpTask extends DomainEntity {
 	}
 
 	@NotNull
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getStartDate() {
 		return this.startDate;
 	}
@@ -96,12 +92,80 @@ public class FixUpTask extends DomainEntity {
 	}
 
 	@NotNull
+	@DateTimeFormat(pattern = "dd/MM/yyyy")
 	public Date getEndDate() {
 		return this.endDate;
 	}
 
 	public void setEndDate(final Date endDate) {
 		this.endDate = endDate;
+	}
+
+
+	// Relationships
+
+	private Collection<Application>	applications;
+	private Customer				customer;
+	private Collection<Phase>		phases;
+	private Warranty				warranty;
+	private Collection<Category>	categories;
+	private Collection<Complaint>	complaints;
+
+
+	@NotNull
+	public Collection<Application> getApplications() {
+		return this.applications;
+	}
+
+	public void setApplications(final Collection<Application> applications) {
+		this.applications = applications;
+	}
+
+	@NotNull
+	@Valid
+	public Customer getCustomer() {
+		return this.customer;
+	}
+
+	public void setCustomer(final Customer customer) {
+		this.customer = customer;
+	}
+
+	@NotNull
+	public Collection<Phase> getPhases() {
+		return this.phases;
+	}
+
+	public void setPhases(final Collection<Phase> phases) {
+		this.phases = phases;
+	}
+
+	@NotNull
+	@Valid
+	public Warranty getWarranty() {
+		return this.warranty;
+	}
+
+	public void setWarranty(final Warranty warranty) {
+		this.warranty = warranty;
+	}
+
+	@NotNull
+	public Collection<Category> getCategories() {
+		return this.categories;
+	}
+
+	public void setCategories(final Collection<Category> categories) {
+		this.categories = categories;
+	}
+
+	@NotNull
+	public Collection<Complaint> getComplaints() {
+		return this.complaints;
+	}
+
+	public void setComplaints(final Collection<Complaint> complaints) {
+		this.complaints = complaints;
 	}
 
 }
