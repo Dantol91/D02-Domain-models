@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="68" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="951" x="7" y="75">
+<window height="768" maximized="true" width="951" x="14" y="80">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -106,7 +106,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.wst.server.ui.ServersView" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -164,10 +164,10 @@
 <perspective_action id="org.eclipse.wst.web.ui.webDevPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProgressView"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
@@ -204,7 +204,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c02bc48" ratio="0.7972637" ratioLeft="641" ratioRight="163" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c6ae889">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4c02bc48" ratio="0.5416164" ratioLeft="449" ratioRight="380" relationship="4" relative="org.eclipse.ui.internal.ViewStack@5c6ae889">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
@@ -238,10 +238,10 @@
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@631ebf05" ratio="0.42540443" ratioLeft="710" ratioRight="959" relationship="2" relative="org.eclipse.ui.internal.ViewStack@4c02bc48">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
@@ -275,7 +275,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.13579512" ratioLeft="228" ratioRight="1451" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5c6ae889"/>
+<info part="org.eclipse.ui.editorss" ratio="0.29288703" ratioLeft="210" ratioRight="507" relationship="2" relative="org.eclipse.ui.internal.ViewStack@5c6ae889"/>
 </mainWindow>
 </layout>
 </perspective>
@@ -299,50 +299,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Application.java" tooltip="Acme Handy Worker/src/main/java/domain/Application.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Application.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="PopulateDatabase.xml" tooltip="Acme Handy Worker/src/main/resources/PopulateDatabase.xml">
+<persistable path="/Acme Handy Worker/src/main/resources/PopulateDatabase.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Finder.java" tooltip="Acme Handy Worker/src/main/java/domain/Finder.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Finder.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DomainEntity.java" tooltip="Acme Handy Worker/src/main/java/domain/DomainEntity.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/DomainEntity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sponsorship.java" tooltip="Acme Handy Worker/src/main/java/domain/Sponsorship.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Sponsorship.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PopulateDatabase.java" tooltip="Acme Handy Worker/src/main/java/utilities/PopulateDatabase.java">
+<persistable path="/Acme Handy Worker/src/main/java/utilities/PopulateDatabase.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Customisation.java" tooltip="Acme Handy Worker/src/main/java/domain/Customisation.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Customisation.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FixUpTask.java" tooltip="Acme Handy Worker/src/main/java/domain/FixUpTask.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/FixUpTask.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Warranty.java" tooltip="Acme Handy Worker/src/main/java/domain/Warranty.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Warranty.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Tutorial.java" tooltip="Acme Handy Worker/src/main/java/domain/Tutorial.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Tutorial.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Sponsor.java" tooltip="Acme Handy Worker/src/main/java/domain/Sponsor.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Sponsor.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpamTerm.java" tooltip="Acme Handy Worker/src/main/java/domain/SpamTerm.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/SpamTerm.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SocialProfile.java" tooltip="Acme Handy Worker/src/main/java/domain/SocialProfile.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/SocialProfile.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Section.java" tooltip="Acme Handy Worker/src/main/java/domain/Section.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Section.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Note.java" tooltip="Acme Handy Worker/src/main/java/domain/Note.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Note.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Report.java" tooltip="Acme Handy Worker/src/main/java/domain/Report.java">
 <persistable path="/Acme Handy Worker/src/main/java/domain/Report.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Complaint.java" tooltip="Acme Handy Worker/src/main/java/domain/Complaint.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Complaint.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Referee.java" tooltip="Acme Handy Worker/src/main/java/domain/Referee.java">
 <persistable path="/Acme Handy Worker/src/main/java/domain/Referee.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ProfessionalRecord.java" tooltip="Acme Handy Worker/src/main/java/domain/ProfessionalRecord.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/ProfessionalRecord.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Box.java" tooltip="Acme Handy Worker/src/main/java/domain/Box.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Box.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Phase.java" tooltip="Acme Handy Worker/src/main/java/domain/Phase.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/Phase.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Category.java" tooltip="Acme Handy Worker/src/main/java/domain/Category.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Category.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersonalRecord.java" tooltip="Acme Handy Worker/src/main/java/domain/PersonalRecord.java">
-<persistable path="/Acme Handy Worker/src/main/java/domain/PersonalRecord.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Warranty.java" tooltip="Acme Handy Worker/src/main/java/domain/Warranty.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Warranty.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Finder.java" tooltip="Acme Handy Worker/src/main/java/domain/Finder.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Finder.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CreditCard.java" tooltip="Acme Handy Worker/src/main/java/domain/CreditCard.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/CreditCard.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Curriculum.java" tooltip="Acme Handy Worker/src/main/java/domain/Curriculum.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/Curriculum.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HandyWorker.java" tooltip="Acme Handy Worker/src/main/java/domain/HandyWorker.java">
+<persistable path="/Acme Handy Worker/src/main/java/domain/HandyWorker.java"/>
 </file>
 </mruList>
 </workbench>

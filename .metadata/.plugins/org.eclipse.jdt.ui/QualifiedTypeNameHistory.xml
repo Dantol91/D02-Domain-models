@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="services.ReviewerService"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang.builder.ReflectionToStringBuilder"/>
 <fullyQualifiedTypeName name="utilities.internal.CustomPrintBuilder"/>
@@ -44,13 +43,11 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="repositories.ShoutRepository"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="javax.transaction.Transactional"/>
 <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
 <fullyQualifiedTypeName name="utilities.internal.AbstractDatabasePopulator"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.CreditCardNumber"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.URL"/>
-<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotBlank"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.constraints.Range"/>
 <fullyQualifiedTypeName name="javax.validation.constraints.Digits"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -58,6 +55,9 @@
 <fullyQualifiedTypeName name="javax.persistence.Access"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="org.springframework.format.annotation.DateTimeFormat"/>
-<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
 <fullyQualifiedTypeName name="javax.persistence.TemporalType"/>
+<fullyQualifiedTypeName name="org.hibernate.validator.constraints.NotBlank"/>
+<fullyQualifiedTypeName name="javax.persistence.Temporal"/>
+<fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Temporal"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
 </qualifiedTypeNameHistroy>
